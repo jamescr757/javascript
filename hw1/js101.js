@@ -63,7 +63,7 @@
 
 // 4. print a banner given some text - the function should wrap a box around the text
 // function printBanner(text) {
-//     border = new Array(text.length + 4).fill("-");
+//     const border = new Array(text.length + 4).fill("-");
 //     console.log(border.join(""));
 //     console.log(`- ${text} -`);
 //     console.log(border.join(""));
@@ -104,6 +104,31 @@
 //     return leetString.join("");
 // }
 // console.log(leetspeak("Leet"));
+
+
+// better method for 5. using a translator map
+// const translator = {
+//     A: 4,
+//     E: 3,
+//     G: 6,
+//     I: 1,
+//     O: 0,
+//     S: 5,
+//     T: 7
+// }
+
+// function leet(string) {
+//     const leetString = [];
+//     for (const letter of string) {
+//         if (letter.toUpperCase() in translator) {
+//             leetString.push(translator[letter.toUpperCase()]);
+//         } else {
+//             leetString.push(letter);
+//         }
+//     }
+//     return leetString.join("");
+// }
+// console.log(leet("Leet"));
 
 // 6. long-long vowels - given a string, return a string with long vowels extended to length 5
 // function longLongVowels(word) {
